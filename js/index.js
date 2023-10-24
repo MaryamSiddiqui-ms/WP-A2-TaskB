@@ -58,6 +58,11 @@ document.querySelector('.decrypt-btn').addEventListener("click", async function(
     document.getElementById('decrypted_text').value = decrypted.toString()
 })
 
+document.getElementById('decrypt-navlink').addEventListener('click', async function(e){
+    e.preventDefault();
+    document.getElementById('decrypt-body').classList.add('hide')
+    document.getElementById('key-body').classList.remove('hide')
+});
 
 
 
